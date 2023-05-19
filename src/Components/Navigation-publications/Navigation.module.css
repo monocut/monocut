@@ -1,0 +1,29 @@
+.container {
+    margin-top: 60px;
+}
+
+.navigate {
+    display: flex;
+    padding: 0px 200px;
+    justify-content: space-between;
+    border: 1px solid rgb(197, 197, 197);
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.content{
+    padding: 20px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #737373;
+    border: 1px solid white;
+}
+
+.content:hover{
+    color: #000000;
+    border:1px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}

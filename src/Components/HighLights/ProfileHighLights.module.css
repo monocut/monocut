@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.highlights_images {
+text-align: center;
+}
+
+.preview {
+    width: 87px;
+    height: 87px;
+    background-color: #96c2b9;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+.descript {
+margin-top: 8px;
+}

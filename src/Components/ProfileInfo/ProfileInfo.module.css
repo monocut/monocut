@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    height: 300px;
+}
+
+.profile_photo img {
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+/* .profile_photo img:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+} */
+
+.name_buttons {
+    display: flex;
+    margin-left: 80px;
+    gap: 30px;
+    padding-top: 50px;
+}
+.name_buttons button {
+    width: 220px;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EFEFEF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.name_buttons button:hover {
+    background-color: #d5d5d5;
+}
+
+.name {
+    font-size: 20px;
+}
+
+
+.followers_block {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 100px;
+    gap: 50px;
+}
+
+.profile_description {
+    margin-left: 80px;
+    margin-top: 50px;
+}

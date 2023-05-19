@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+ 
+}
+
+.nav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+}
+
+.content {
+  padding: 40px 100px;
+  overflow: auto;
+  margin-left: 200px;
+  height: 100%;
+}
