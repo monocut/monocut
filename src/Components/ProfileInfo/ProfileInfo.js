@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import style from "./ProfileInfo.module.css"
 import profilePhoto from "../../Images/profilePhoto.jpg"
+import Authentification from "../Auth/Authentification";
 
 const ProfileInfo = () => {
 
     const [showModal, setShowModal] = useState(false);
+    const [isAuth, setIsAuth] = useState(false);
+
+    function logIn() {
+        setIsAuth(true)
+    }
 
     function showFollowers() {
         setShowModal(true)
@@ -16,6 +22,7 @@ const ProfileInfo = () => {
         <div className={style.container}>
             <div className={style.profile_photo}>
                 <img src={profilePhoto} alt="profPhoto"></img>
+                <button onClick={logIn}>Log in</button>
             </div>
             <div className={style.profile_info}>
                 <div className={style.name_buttons}>
@@ -57,6 +64,9 @@ const ProfileInfo = () => {
                     </div>
                 </div>
 
+            )}
+            {isAuth && (
+                <Authentification />
             )}
 
 

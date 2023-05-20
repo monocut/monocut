@@ -6,6 +6,8 @@ import ContentWall from "./Components/Content-wall/ContentWall";
 import Nav from "./Components/NAV/Nav";
 
 function App() {
+
+
   return (
     <div className={style.container}>
       <div className={style.nav}>
@@ -18,6 +20,7 @@ function App() {
       <Navigation />
       <ContentWall />
       </div>
+
 
     </div>
   );
