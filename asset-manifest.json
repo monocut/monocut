@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/monocut/static/css/main.7d0422a6.css",
-    "main.js": "/monocut/static/js/main.6edffd96.js",
+    "main.css": "/monocut/static/css/main.e72e60e7.css",
+    "main.js": "/monocut/static/js/main.02293991.js",
     "static/js/787.272955ed.chunk.js": "/monocut/static/js/787.272955ed.chunk.js",
     "static/media/profilePhoto.jpg": "/monocut/static/media/profilePhoto.af80c1cc2840b757ccec.jpg",
     "static/media/insta-logo.png": "/monocut/static/media/insta-logo.6521853f5083ef553a91.png",
     "index.html": "/monocut/index.html",
-    "main.7d0422a6.css.map": "/monocut/static/css/main.7d0422a6.css.map",
-    "main.6edffd96.js.map": "/monocut/static/js/main.6edffd96.js.map",
+    "main.e72e60e7.css.map": "/monocut/static/css/main.e72e60e7.css.map",
+    "main.02293991.js.map": "/monocut/static/js/main.02293991.js.map",
     "787.272955ed.chunk.js.map": "/monocut/static/js/787.272955ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d0422a6.css",
-    "static/js/main.6edffd96.js"
+    "static/css/main.e72e60e7.css",
+    "static/js/main.02293991.js"
   ]
 }
