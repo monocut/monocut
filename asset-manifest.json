@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/my-instagram/static/css/main.96cf6940.css",
+    "main.js": "/my-instagram/static/js/main.687a873c.js",
+    "static/js/787.272955ed.chunk.js": "/my-instagram/static/js/787.272955ed.chunk.js",
+    "static/media/profilePhoto.jpg": "/my-instagram/static/media/profilePhoto.af80c1cc2840b757ccec.jpg",
+    "static/media/insta-logo.png": "/my-instagram/static/media/insta-logo.6521853f5083ef553a91.png",
+    "index.html": "/my-instagram/index.html",
+    "main.96cf6940.css.map": "/my-instagram/static/css/main.96cf6940.css.map",
+    "main.687a873c.js.map": "/my-instagram/static/js/main.687a873c.js.map",
+    "787.272955ed.chunk.js.map": "/my-instagram/static/js/787.272955ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96cf6940.css",
+    "static/js/main.687a873c.js"
+  ]
+}
