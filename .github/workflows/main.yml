@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY }}
-          BRANCH: main # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
+          ssh_key: ${{ secrets.GITHUB_TOKEN }}
+          branch: main # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
 #         CLEAN: true # Automatically remove old files from the deployment branch
