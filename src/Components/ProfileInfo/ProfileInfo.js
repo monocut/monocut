@@ -2,8 +2,21 @@ import React, { useState } from "react";
 import style from "./ProfileInfo.module.css"
 import profilePhoto from "../../Images/profilePhoto.jpg"
 import Authentification from "../Auth/Authentification";
+import { ModalWindow } from "../ui components/ModalWindow";
 
 const ProfileInfo = () => {
+
+    const subscribers = [
+        {id: 0, email: "oleg_victorov"},
+        {id: 1, email: "a.rusanov"}, 
+        {id: 2, email: "barva@clothes"},
+        {id: 3, email: "d.cherkashina"},
+        {id: 4, email: "nastya_barva"},
+        {id: 5, email: "oleg_wow"},
+        {id: 6, email: "ihor_dan"},
+        {id: 7, email: "olga_ppo"},
+        {id: 8, email: "v.zelensky"},
+        ]
 
     const [showModal, setShowModal] = useState(false);
     const [isAuth, setIsAuth] = useState(false);
@@ -15,9 +28,11 @@ const ProfileInfo = () => {
     function showFollowers() {
         setShowModal(true)
     }
+
     function closeFollowers() {
         setShowModal(false)
     }
+
     return (
         <div className={style.container}>
             <div className={style.profile_photo}>
@@ -43,30 +58,9 @@ const ProfileInfo = () => {
                     </ul>
                 </div>
             </div>
-            {showModal && (
-                <div className={style.modal_followers}>
-                    <div className={style.modal_content}>
-                        <div className={style.modal_header}>
-                        <div>Подписчики</div>
-                        <button onClick={closeFollowers}>X</button>
-                        </div>
-                        <ul>
-                            <li>oleg_victorov<button>Подписаться</button></li>
-                            <li>barva@clothes<button>Подписаться</button></li>
-                            <li>d.cherkashina<button>Подписаться</button></li>
-                            <li>a.rusanov<button>Подписаться</button></li>
-                            <li>nastya_barva<button>Подписаться</button></li>
-                            <li>oleg_wow<button>Подписаться</button></li>
-                            <li>ihor_dan<button>Подписаться</button></li>
-                            <li>olga_ppo<button>Подписаться</button></li>
-                            <li>v.zelensky<button>Подписаться</button></li>
-                        </ul>
-                    </div>
-                </div>
-
-            )}
+            {showModal && <ModalWindow closeFollowers={closeFollowers} subscribers={subscribers}/>}
             {isAuth && (
-                <Authentification />
+                <Authentification/>
             )}
 
 

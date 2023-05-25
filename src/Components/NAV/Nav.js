@@ -12,15 +12,15 @@ const Nav = () => {
             </div>
             <div className={style.nav_list}>
             <ul>
-                <li>Главная</li>
-                <li>Поисковый запрос</li>
-                <li>Интересное</li>
-                <li>Reels</li>
-                <li>Сообщения</li>
-                <li>Уведомления</li>
-                <li>Создать</li>
-                <li>Профиль</li>
-                <li>Еще</li>
+                <li><button>Главная</button></li>
+                <li><button>Поисковый запрос</button></li>
+                <li><button>Интересное</button></li>
+                <li><button>Reels</button></li>
+                <li><button>Сообщения</button></li>
+                <li><button>Уведомления</button></li>
+                <li><button>Создать</button></li>
+                <li><button>Профиль</button></li>
+                <li><button>Еще</button></li>
 
             </ul>
             </div>
