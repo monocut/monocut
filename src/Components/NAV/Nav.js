@@ -1,10 +1,10 @@
 import React from "react";
 import style from "./Nav.module.css";
-import instLogo from "../../Images/insta-logo.png"
+import instLogo from "../../Images/insta-logo.png";
+import { NAVIGATION } from "./constants";
 
 
 const Nav = () => {
-
     return(
         <div className={style.container}>
             <div className={style.logo}>
@@ -12,16 +12,8 @@ const Nav = () => {
             </div>
             <div className={style.nav_list}>
             <ul>
-                <li>Главная</li>
-                <li>Поисковый запрос</li>
-                <li>Интересное</li>
-                <li>Reels</li>
-                <li>Сообщения</li>
-                <li>Уведомления</li>
-                <li>Создать</li>
-                <li>Профиль</li>
-                <li>Еще</li>
-
+                {NAVIGATION.map((el) => {
+                    return <li><button>{el.title}</button></li>} )}
             </ul>
             </div>
 

@@ -1,5 +1,5 @@
 .container {
-    width: 200px;
+    width: 220px;
     height: 1000px;
     justify-content: center;
     border: 1px solid rgb(197, 197, 197);
@@ -17,8 +17,22 @@
 
 
 .nav_list li {
-    margin: 30px 10px; 
-    font-size: 16px;
-    font-weight: 500;
+    /* margin: 30px 10px;  */
+    
     list-style-type: none;
+}
+
+.nav_list button {
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px;
+}
+
+.nav_list button:hover {
+    background-color: #ebebeb;
+    border-radius: 5px;
+    width: 160px;
+    text-align: start;
 }

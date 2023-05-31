@@ -1,9 +1,5 @@
-import style from "./App.module.css"
-import ProfileInfo from "./Components/ProfileInfo/ProfileInfo";
-import ProfileHighLights from "./Components/HighLights/ProfileHighLights";
-import Navigation from "./Components/Navigation-publications/Navigation";
-import ContentWall from "./Components/Content-wall/ContentWall";
-import Nav from "./Components/NAV/Nav";
+import style from "./App.module.css";
+import { ProfileInfo, ProfileHighLights , Navigation , ContentWall , Nav } from "./Components"
 
 function App() {
   return (
@@ -18,6 +14,7 @@ function App() {
       <Navigation />
       <ContentWall />
       </div>
+
 
     </div>
   );
