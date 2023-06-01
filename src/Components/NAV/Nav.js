@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Nav.module.css";
-import instLogo from "../../Images/insta-logo.png";
+import instLogo from "../../images/insta-logo.png";
 import { NAVIGATION } from "./constants";
 
 

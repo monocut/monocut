@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Authentification.module.css"
-import logoInst from "../../Images/insta-logo.png"
+import logoInst from "../../images/insta-logo.png"
 
 
 const Authentification = () => (
