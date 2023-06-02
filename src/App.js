@@ -12,8 +12,6 @@ function App() {
         <div className={style.nav}>
           <Nav />
         </div>
-
-
         <div className={style.content}>
           <Routes>
             <Route path="*" element={<Profile />}/>
