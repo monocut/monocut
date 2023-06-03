@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./ProfileInfo.module.css"
-import profilePhoto from "../../images/profilephoto.jpg"
+import profilephoto from "../../images/profilephoto.jpg"
 import Authentification from "../Auth/Authentification";
 import { ModalWindow } from "../ui-components/ModalWindow";
 
@@ -36,7 +36,7 @@ const ProfileInfo = () => {
     return (
         <div className={style.container}>
             <div className={style.profile_photo}>
-                <img src={profilePhoto} alt="profPhoto"></img>
+                <img src={profilephoto} alt="profPhoto"></img>
                 <button onClick={logIn}>Log in</button>
             </div>
             <div className={style.profile_info}>
