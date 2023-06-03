@@ -1,5 +1,5 @@
 import React  from "react"; 
-import { ProfileInfo, ProfileHighLights , Navigation , ContentWall } from "../../components";
+import { ProfileInfo, ProfileHighLights , Navigation , ContentWall } from "../../Сomponents";
 
 export const Profile = () => (
     <div>

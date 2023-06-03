@@ -1,5 +1,5 @@
 import style from "./App.module.css";
-import { Nav } from "./components";
+import { Nav } from "./Сomponents";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Profile } from "./pages/Profile/Profile";
 import { Feed } from "./pages/Feed/Feed";
