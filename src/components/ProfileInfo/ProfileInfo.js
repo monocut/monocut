@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./ProfileInfo.module.css"
-import profilePhoto from "../../images/profilePhoto.jpg"
+import profilePhoto from "../../images/profilephoto.jpg"
 import Authentification from "../Auth/Authentification";
 import { ModalWindow } from "../ui-components/ModalWindow";
 
