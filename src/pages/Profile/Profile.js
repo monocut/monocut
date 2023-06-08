@@ -3,7 +3,7 @@ import { ProfileInfo, ProfileHighLights , Navigation , ContentWall, Header } fro
 import { Navigate } from "react-router-dom";
 
 export const Profile = () => {
-const auth = false;
+const auth = true;
 
 if (!auth) return <Navigate to={"signup"} />
 
