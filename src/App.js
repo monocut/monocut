@@ -1,8 +1,9 @@
 import style from "./App.module.css";
-import { Nav } from "./components";
+import { Nav, SignIn } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Profile } from "./pages/Profile/Profile";
 import { Feed } from "./pages/Feed/Feed";
+
 
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
         </div>
         <div className={style.content}>
           <Routes>
+            <Route path="signup" element={<SignIn />} />
             <Route path="*" element={<Profile />}/>
+          
             <Route path="feed" element={<Feed />}/>
           </Routes>
         </div>

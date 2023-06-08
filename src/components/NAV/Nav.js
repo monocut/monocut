@@ -13,7 +13,7 @@ const Nav = () => {
             <div className={style.nav_list}>
             <ul>
                 {NAVIGATION.map((el) => {
-                    return <li><button>{el.title}</button></li>} )}
+                    return <li key={el.title}><button>{el.title}</button></li>} )}
             </ul>
             </div>
 

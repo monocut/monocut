@@ -1,0 +1,23 @@
+.header {
+display: flex;
+gap: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: end;
+}
+
+.container button {
+    width: 150px;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EFEFEF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container button:hover {
+    background-color: #d5d5d5;
+}
