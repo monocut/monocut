@@ -1,13 +1,13 @@
 import React from "react";
 import style from "./SignIn.module.css";
-import logoInst from "../../images/insta-logo.png"
+import { logo } from "../../images/index"
 
 
 const SignUp = () => (
     <div className={style.auth_container}>
             <div className={style.auth_content}>
                 <div>
-                <div className={style.img_container}><img src={logoInst} alt="logo"></img></div>
+                <div className={style.img_container}><img src={logo} alt="logo"></img></div>
                 <form className={style.auth_form}>
                     <div className={style.auth_box}>
                     <p>Регистрация</p>
