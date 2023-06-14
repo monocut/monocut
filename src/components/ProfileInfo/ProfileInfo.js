@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import style from "./ProfileInfo.module.css"
-import profilePhoto from "../../Images/profilePhoto.jpg"
-import Authentification from "../Auth/Authentification";
-import { ModalWindow } from "../ui components/ModalWindow";
+import { profilephoto } from "../../images/index";
+import { ModalWindow } from "../ui-components/ModalWindow";
 
 const ProfileInfo = () => {
 
@@ -19,11 +18,6 @@ const ProfileInfo = () => {
         ]
 
     const [showModal, setShowModal] = useState(false);
-    const [isAuth, setIsAuth] = useState(false);
-
-    function logIn() {
-        setIsAuth(true)
-    }
 
     function showFollowers() {
         setShowModal(true)
@@ -35,9 +29,10 @@ const ProfileInfo = () => {
 
     return (
         <div className={style.container}>
+
+           
             <div className={style.profile_photo}>
-                <img src={profilePhoto} alt="profPhoto"></img>
-                <button onClick={logIn}>Log in</button>
+                <img src={profilephoto} alt="profPhoto"></img>
             </div>
             <div className={style.profile_info}>
                 <div className={style.name_buttons}>
@@ -58,15 +53,12 @@ const ProfileInfo = () => {
                     </ul>
                 </div>
             </div>
+
+            
             {showModal && <ModalWindow closeFollowers={closeFollowers} subscribers={subscribers}/>}
-            {isAuth && (
-                <Authentification/>
-            )}
-
-
 
         </div>
-    )
-}
+        )
+        }
 
 export default ProfileInfo;

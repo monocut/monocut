@@ -1,22 +1,29 @@
 import style from "./App.module.css";
-import { ProfileInfo, ProfileHighLights , Navigation , ContentWall , Nav } from "./Components"
+import { Nav, SignIn } from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Profile } from "./pages/Profile/Profile";
+import { Feed } from "./pages/Feed/Feed";
+
+
 
 function App() {
   return (
-    <div className={style.container}>
-      <div className={style.nav}>
-        <Nav />
+    <BrowserRouter>
+      <div className={style.container}>
+        <div className={style.nav}>
+          <Nav />
+        </div>
+        <div className={style.content}>
+          <Routes>
+            <Route path="signup" element={<SignIn />} />
+            <Route path="*" element={<Profile />}/>
+          
+            <Route path="feed" element={<Feed />}/>
+          </Routes>
+        </div>
       </div>
+    </BrowserRouter>
 
-      <div className={style.content}>
-      <ProfileInfo />
-      <ProfileHighLights />
-      <Navigation />
-      <ContentWall />
-      </div>
-
-
-    </div>
   );
 }
 

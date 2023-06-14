@@ -1,16 +1,16 @@
 import React from "react";
-import style from "./Authentification.module.css"
-import logoInst from "../../Images/insta-logo.png"
+import style from "./SignIn.module.css"
+import { logo } from "../../images/index"
 
 
-const Authentification = () => (
+const SignIn = () => (
         <div className={style.auth_container}>
             <div className={style.auth_content}>
                 <div>
-                <div className={style.img_container}><img src={logoInst} alt="logo"></img></div>
+                <div className={style.img_container}><img src={logo} alt="logo"></img></div>
                 <form className={style.auth_form}>
                     <div className={style.auth_box}>
-                    <p>Log In</p>
+                    <p>Войти</p>
                     <div className={style.form_mail}>
                         <label for="mail">E-mail:</label>
                         <input id="mail" placeholder="e-mail" type="email"></input>
@@ -29,4 +29,4 @@ const Authentification = () => (
         </div>
     )
 
-export default Authentification;
+export default SignIn;

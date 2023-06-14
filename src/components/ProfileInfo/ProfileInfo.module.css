@@ -120,3 +120,14 @@
     border: none;
     cursor: pointer;
 }
+
+
+
+.header_content{
+display: flex;
+padding-right: 100px;
+
+}
+.header{
+justify-content: end;
+}
