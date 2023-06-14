@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import style from "./ProfileInfo.module.css"
-// import profilephoto from "../../images/profile-photo.jpg";
 import { profilephoto } from "../../images/index";
 import { ModalWindow } from "../ui-components/ModalWindow";
 
