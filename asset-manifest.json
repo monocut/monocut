@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/monocut/static/css/main.e12ff41c.css",
-    "main.js": "/monocut/static/js/main.65f778f1.js",
+    "main.js": "/monocut/static/js/main.c21d0b51.js",
     "static/js/787.272955ed.chunk.js": "/monocut/static/js/787.272955ed.chunk.js",
     "static/media/profile-photo.jpg": "/monocut/static/media/profile-photo.af80c1cc2840b757ccec.jpg",
     "static/media/insta-logo.png": "/monocut/static/media/insta-logo.6521853f5083ef553a91.png",
     "index.html": "/monocut/index.html",
     "main.e12ff41c.css.map": "/monocut/static/css/main.e12ff41c.css.map",
-    "main.65f778f1.js.map": "/monocut/static/js/main.65f778f1.js.map",
+    "main.c21d0b51.js.map": "/monocut/static/js/main.c21d0b51.js.map",
     "787.272955ed.chunk.js.map": "/monocut/static/js/787.272955ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e12ff41c.css",
-    "static/js/main.65f778f1.js"
+    "static/js/main.c21d0b51.js"
   ]
 }
