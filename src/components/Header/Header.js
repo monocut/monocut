@@ -4,7 +4,7 @@ import style from "./Header.module.css";
 import SignIn from "../Auth/SignIn";
 import SignUp from "../Auth/SignUp";
 
-const Header = ({auth}) => {
+const Header = ({onSignUp}) => {
     const [isAuth, setIsAuth] = useState(false);
     const [user, setUser] = useState(null);
     const [isHaveToken, setIsHaveToken] = useState(false);
@@ -23,8 +23,9 @@ const Header = ({auth}) => {
         localStorage.setItem("user", JSON.stringify(userData));
     }
 
-    function signUp() {
+    function handleSignUp(userData) {
         setIsHaveToken(true);
+        onSignUp(userData);
     }
   
     return(
@@ -34,11 +35,11 @@ const Header = ({auth}) => {
                     <button onClick={logIn}>Войти</button>
                 )}
                 {!isAuth && (
-                    <button onClick={signUp}>Регистрация</button>
+                    <button onClick={() => setIsHaveToken(true)}>Регистрация</button>
                 )}
                 {isAuth && (
                     <span>
-                        Добро пожаловать, {user.name}!
+                        Добро пожаловать, {user.email}!
                     </span>
                 )}
                     
@@ -48,7 +49,7 @@ const Header = ({auth}) => {
                 <SignIn />
             )}
             {isHaveToken && (
-                <SignUp onSignUp={logIn}/>
+                <SignUp onSignUp={handleSignUp}/>
             )}
         </div>
     )
